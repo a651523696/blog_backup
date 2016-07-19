@@ -6,9 +6,9 @@ tags: [mysql,工具]
 ---
 >今天在安装mysql5.7的时候遇到很多问题，原以为简单的下载安装即可了事，却废了大半天功夫，所以写这篇博客记录一下，也给遇到同样问题的朋友一点指引。
 
-><!--more-->
+<!--more-->
 
-#下载
+###下载
 
 在这里我下载的是windows64位5.7免安装版
 ![](/images/mysql-5.7-install/mysql-install-1.png)
@@ -17,6 +17,7 @@ tags: [mysql,工具]
 ###安装mysql服务
 解压即可，不过mysql的服务还是要手动进行安装。
 在开始菜单点开的搜索框中输入cmd，会找到一个黑色框框的cmd程序，右键程序以管理员身份运行，如果不以管理员身份运行的话，会报错。
+![](/images/mysql-5.7-install/mysql-install-cmd.png)
 进入自己本地的mysql的安装路径下的bin目录(即刚刚的解压路径),在这里我的路径是F:\\mysql-5.7.13-winx64\\bin
 ![](/images/mysql-5.7-install/mysql-install-2.png)
 
@@ -94,6 +95,18 @@ Mysql 服务已经启动成功
 
 ![](/images/mysql-5.7-install/mysql-install-8.png)
 
+最后我们还需要更改默认密码
+
+
+- step 1: SET PASSWORD = PASSWORD(‘新密码‘);
+
+- step 2: ALTER USER ‘root‘@‘localhost‘ PASSWORD EXPIRE NEVER;
+
+- step 3: flush privileges;
+
+注意step2中的引号不要丢了。
+
+完成以上三步完成后退出使用新设置的密码登录即可,在这里 新密码 指你自己要设置的密码
 
 到这里总算是结束了,没想到安装个mysql都这么费劲
 
