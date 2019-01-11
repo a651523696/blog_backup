@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 叶金标的博客
+title: chigend的博客
 subtitle: 读万卷书，行万里路
 description: 
-author: yejinbiao
+author: chigend
 language: zh-Hans
 timezone: Asia/Shanghai
 
@@ -15,7 +15,7 @@ menu:
     about: 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://chigend.github.io.
+url: http://chigend.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -68,6 +68,24 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: yilia
 
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
