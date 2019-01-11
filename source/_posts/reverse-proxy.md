@@ -1,8 +1,7 @@
 ---
 title: 正向代理与反向代理的区别
 date: 2016-07-27 13:17:48
-categories: 网络
-tags: [反向代理,正向代理]
+tags: [proxy,network]
 ---
 
 

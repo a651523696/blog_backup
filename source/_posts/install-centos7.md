@@ -1,8 +1,7 @@
 ---
 title: 用VirtualBox虚拟机安装CentOS7系统
 date: 2016-06-29 10:37:42
-categories: 教程
-tags: [系统,虚拟机]
+tags: [linux,install]
 ---
 
 >介绍
